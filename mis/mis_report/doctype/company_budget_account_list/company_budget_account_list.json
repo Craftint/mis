@@ -1,0 +1,200 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "format:{account}-{company_budget}",
+ "creation": "2023-08-06 15:43:17.485585",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "account",
+  "jan",
+  "feb",
+  "mar",
+  "apr",
+  "may",
+  "jun",
+  "jul",
+  "column_break_8",
+  "aug",
+  "sep",
+  "oct",
+  "nov",
+  "dec",
+  "company_budget",
+  "fiscal_year",
+  "lft",
+  "rgt",
+  "is_group",
+  "old_parent",
+  "parent_company_budget_account_list"
+ ],
+ "fields": [
+  {
+   "fieldname": "account",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Account"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_group",
+   "fieldtype": "Check",
+   "label": "Is Group"
+  },
+  {
+   "fieldname": "jan",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Jan"
+  },
+  {
+   "fieldname": "feb",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Feb"
+  },
+  {
+   "fieldname": "mar",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Mar"
+  },
+  {
+   "fieldname": "apr",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Apr"
+  },
+  {
+   "fieldname": "may",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "May"
+  },
+  {
+   "fieldname": "jun",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Jun"
+  },
+  {
+   "fieldname": "jul",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Jul"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "aug",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Aug"
+  },
+  {
+   "fieldname": "sep",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "sep"
+  },
+  {
+   "fieldname": "oct",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Oct"
+  },
+  {
+   "fieldname": "nov",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Nov"
+  },
+  {
+   "fieldname": "dec",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Dec"
+  },
+  {
+   "fieldname": "company_budget",
+   "fieldtype": "Link",
+   "in_global_search": 1,
+   "in_standard_filter": 1,
+   "label": "Company Budget",
+   "options": "Company Budget",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "company_budget.fiscal_year",
+   "fieldname": "fiscal_year",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_standard_filter": 1,
+   "label": "Fiscal Year",
+   "read_only": 1
+  },
+  {
+   "fieldname": "lft",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Left",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "rgt",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Right",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_group",
+   "fieldtype": "Check",
+   "label": "Is Group"
+  },
+  {
+   "fieldname": "old_parent",
+   "fieldtype": "Link",
+   "label": "Old Parent",
+   "options": "Company Budget Account List"
+  },
+  {
+   "fieldname": "parent_company_budget_account_list",
+   "fieldtype": "Link",
+   "label": "Parent Company Budget Account List",
+   "options": "Company Budget Account List"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_tree": 1,
+ "links": [],
+ "modified": "2023-08-06 22:39:23.083877",
+ "modified_by": "Administrator",
+ "module": "MIS Report",
+ "name": "Company Budget Account List",
+ "nsm_parent_field": "parent_company_budget_account_list",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "ASC"
+}

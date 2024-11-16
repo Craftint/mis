@@ -1,0 +1,172 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "format:{label}-{mis_report_account_settings}-{company_budget}",
+ "creation": "2023-08-09 23:26:11.357929",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "label",
+  "group_label",
+  "tab_name",
+  "jan",
+  "feb",
+  "mar",
+  "apr",
+  "may",
+  "jun",
+  "jul",
+  "column_break_8",
+  "aug",
+  "sep",
+  "oct",
+  "nov",
+  "dec",
+  "company_budget",
+  "fiscal_year",
+  "mis_report_account_settings"
+ ],
+ "fields": [
+  {
+   "fieldname": "label",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Label"
+  },
+  {
+   "fieldname": "group_label",
+   "fieldtype": "Data",
+   "label": "Group Label"
+  },
+  {
+   "fieldname": "jan",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Jan"
+  },
+  {
+   "fieldname": "feb",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Feb"
+  },
+  {
+   "fieldname": "mar",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Mar"
+  },
+  {
+   "fieldname": "apr",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Apr"
+  },
+  {
+   "fieldname": "may",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "May"
+  },
+  {
+   "fieldname": "jun",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Jun"
+  },
+  {
+   "fieldname": "jul",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Jul"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "aug",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Aug"
+  },
+  {
+   "fieldname": "sep",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "sep"
+  },
+  {
+   "fieldname": "oct",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Oct"
+  },
+  {
+   "fieldname": "nov",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Nov"
+  },
+  {
+   "fieldname": "dec",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Dec"
+  },
+  {
+   "fieldname": "company_budget",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Company Budget",
+   "options": "Company Budget",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "company_budget.fiscal_year",
+   "fieldname": "fiscal_year",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Fiscal Year",
+   "read_only": 1
+  },
+  {
+   "fieldname": "mis_report_account_settings",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "MIS Report Account Settings"
+  },
+  {
+   "fieldname": "tab_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Tab Name"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-08-10 10:15:24.639937",
+ "modified_by": "Administrator",
+ "module": "MIS Report",
+ "name": "MIS Report Budget",
+ "nsm_parent_field": "parent_company_budget_account_list",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "ASC"
+}

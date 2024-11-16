@@ -1,0 +1,30 @@
+{
+ "add_total_row": 1,
+ "columns": [],
+ "creation": "2023-08-27 11:02:19.230424",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letter_head": "GC - Letter Head",
+ "modified": "2023-08-27 11:02:19.230424",
+ "modified_by": "Administrator",
+ "module": "MIS Report",
+ "name": "MIS Accounts Receivable",
+ "owner": "Administrator",
+ "prepared_report": 1,
+ "ref_doctype": "MIS Report Settings",
+ "report_name": "MIS Accounts Receivable",
+ "report_type": "Script Report",
+ "roles": [
+  {
+   "role": "Accounts Manager"
+  },
+  {
+   "role": "Accounts User"
+  }
+ ]
+}

@@ -1,0 +1,52 @@
+<style>
+  .table th:first-child,
+.table td:first-child {
+  position: sticky;
+  left: 0;
+  background-color: #d5d7d9;
+  color: #373737;
+  border-color: #b0b5b9;
+  min-width: 300px !important;
+}
+.table th{font-weight: normal;}
+.table-secondary td,.table-secondary th {font-weight: bold;}
+.bglight{ background-color: #eef3f8; border:solid 1px #b0b5b9 !important;}
+.bgdark{background-color: #f3f3f3; border:solid 1px #b0b5b9 !important;}
+
+
+</style>
+<div id="mis_report" style="background-color:#fff;width:100%; padding:14px;">
+  <ul class="nav nav-tabs" id="myTab" role="tablist">
+  {% for(var x=0,y=tabs.length; x<y; x++) { 
+    %}
+    {% if (x==0){ %}
+    <li class="nav-item" role="presentation">
+      <a class="nav-link active" id="budget{{x}}-tab" data-toggle="tab" href="#budget{{x}}" role="tab" aria-controls="budget{{x}}" aria-selected="true">{{tabs[x]}} </a>
+    </li>
+    {% } else{ %}
+    <li class="nav-item" role="presentation">
+      <a class="nav-link " id="budget{{x}}-tab" data-toggle="tab" href="#budget{{x}}" role="tab" aria-controls="budget{{x}}" aria-selected="false">{{tabs[x]}} </a>
+    </li>
+    {% } %}
+  {% } %}
+</ul>
+<div class="tab-content" id="myTabContent">
+
+  
+
+  {% for(var x=0,y=tabs.length; x<y; x++) { 
+    %}
+    {% if (x==0){ %}
+    <div class="tab-pane fade show active" id="budget{{x}}" role="tabpanel" aria-labelledby="budget{{x}}-tab">
+      
+    </div>
+    {% } else{ %}
+    <div class="tab-pane fade" id="budget{{x}}" role="tabpanel" aria-labelledby="budget{{x}}-tab">
+      
+    </div>
+    {% } %}
+  {% } %}
+
+</div>  
+</div>
+    

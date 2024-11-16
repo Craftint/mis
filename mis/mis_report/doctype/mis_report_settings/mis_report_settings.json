@@ -1,0 +1,158 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{title}-{company}",
+ "creation": "2023-08-07 13:01:23.472941",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "company",
+  "title",
+  "cost_center",
+  "column_break_4",
+  "page_title",
+  "display_order",
+  "section_break_4",
+  "accounts",
+  "section_break_6",
+  "direct_expense",
+  "section_break_8",
+  "indirect_expense",
+  "section_break_13",
+  "other_income",
+  "section_break_15",
+  "other_expense",
+  "section_break_17",
+  "depreciation"
+ ],
+ "fields": [
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Tab/Sheet Name"
+  },
+  {
+   "fieldname": "cost_center",
+   "fieldtype": "Table MultiSelect",
+   "label": "Cost Center",
+   "options": "Budget Cost Center"
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "accounts",
+   "fieldtype": "Table",
+   "label": "Revenue",
+   "options": "MIS Report Account Settings"
+  },
+  {
+   "fieldname": "direct_expense",
+   "fieldtype": "Table",
+   "label": "Direct Expense",
+   "options": "MIS Report Account Settings"
+  },
+  {
+   "fieldname": "indirect_expense",
+   "fieldtype": "Table",
+   "label": "Indirect Expense",
+   "options": "MIS Report Account Settings"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "other_income",
+   "fieldtype": "Table",
+   "label": "OTHER INCOME ( excluding from net operating profit )",
+   "options": "MIS Report Account Settings"
+  },
+  {
+   "fieldname": "other_expense",
+   "fieldtype": "Table",
+   "label": "OTHER EXPENSE ( excluding from net operating profit )",
+   "options": "MIS Report Account Settings"
+  },
+  {
+   "fieldname": "depreciation",
+   "fieldtype": "Table",
+   "label": "DEPRECIATION",
+   "options": "MIS Report Account Settings"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "page_title",
+   "fieldtype": "Data",
+   "label": "Title"
+  },
+  {
+   "default": "0",
+   "fieldname": "display_order",
+   "fieldtype": "Int",
+   "label": "Display Order"
+  },
+  {
+   "fieldname": "section_break_13",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_15",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_17",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-10-31 11:27:26.107052",
+ "modified_by": "Administrator",
+ "module": "MIS Report",
+ "name": "MIS Report Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts Manager",
+   "select": 1,
+   "share": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
